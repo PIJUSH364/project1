@@ -21,6 +21,7 @@ router.post("/add_user", async (req, res) => {
 
 router.get("/filter", async (req, res) => {
   try {
+    // testing query params
     const { title, description, userId, userName, userEmail } = req.query;
 
     let postFilter = {};
